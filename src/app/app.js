@@ -47,6 +47,7 @@ import './modules/changelly';
 import './modules/addressBook';
 import './modules/faq';
 import './modules/voting';
+import './modules/secretMessages';
 
 // Create and bootstrap application
 const requires = [
@@ -93,7 +94,9 @@ const requires = [
     'app.changelly',
     'app.addressBook',
     'app.votingCreatePoll',
-    'app.votingPolls'
+    'app.votingPolls',
+    'app.encryptMessage',
+    'app.decryptMessage',
 ];
 
 window.$ = window.jQuery = $;

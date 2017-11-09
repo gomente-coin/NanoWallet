@@ -1,0 +1,57 @@
+<div class="decryptMessage-page">
+  <div class="container-fluid main">
+
+    <div class="row">
+      <div class="col-sm-9">
+        <h2>Decrypt message</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-9">
+	<div class="panel-body">
+          <fieldset class="form-group">
+            <div class="input-group">
+              <span class="input-group-btn">
+	        <label>From:</label>
+              </span>
+              <input type="text" class="form-control" ng-model="$ctrl.formData.from" />
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="input-group">
+              <span class="input-group-btn">
+	        <label>Message:</label>
+              </span>
+              <input type="text" class="form-control" ng-model="$ctrl.formData.message" />
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="input-group">
+              <span class="input-group-btn">
+	        <label>Password:</label>
+              </span>
+              <input type="password" class="form-control" ng-model="$ctrl.common.password" />
+            </div>
+          </fieldset>
+	  <button class="btn btn-success" ng-click="$ctrl.decrypt()">Decrypt</button>
+	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-9">
+        <fieldset class="form-group">
+          <div class="input-group">
+            <span class="input-group-btn">
+	      <label>Decrypted Message:</label>
+            </span>
+            <input type="text" class="form-control" ng-model="$ctrl.output.decryptedMessage" readonly />
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+  </div>
+</div>
+

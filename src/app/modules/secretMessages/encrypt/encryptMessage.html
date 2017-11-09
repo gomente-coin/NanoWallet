@@ -1,0 +1,57 @@
+<div class="encryptMessage-page">
+  <div class="container-fluid main">
+
+    <div class="row">
+      <div class="col-sm-9">
+        <h2>Encrypt message</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-9">
+	<div class="panel-body">
+          <fieldset class="form-group">
+            <div class="input-group">
+              <span class="input-group-btn">
+	        <label>To:</label>
+              </span>
+              <input type="text" class="form-control" ng-model="$ctrl.formData.to" />
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="input-group">
+              <span class="input-group-btn">
+	        <label>Message:</label>
+              </span>
+              <input type="text" class="form-control" ng-model="$ctrl.formData.message" />
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <div class="input-group">
+              <span class="input-group-btn">
+	        <label>Password:</label>
+              </span>
+              <input type="password" class="form-control" ng-model="$ctrl.common.password" />
+            </div>
+          </fieldset>
+	  <button class="btn btn-success" ng-click="$ctrl.encrypt()">Encrypt</button>
+	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-9">
+        <fieldset class="form-group">
+          <div class="input-group">
+            <span class="input-group-btn">
+	      <label>Encrypted Message:</label>
+            </span>
+            <input type="text" class="form-control" ng-model="$ctrl.output.encryptedMessage" readonly />
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+  </div>
+</div>
+
